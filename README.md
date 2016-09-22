@@ -37,7 +37,7 @@ cp 000-default.conf projectname.conf
 
 //OR run this will copy the config from this repo
 curl https://raw.githubusercontent.com/beaverden/laravel-init/master/projectname.conf > projectname.conf
-
+//Make sure to edit it properly
 
 //Disables the default site listening on port 80
 sudo a2dissite 000-default

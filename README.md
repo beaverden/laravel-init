@@ -36,7 +36,7 @@ cd /etc/apache2/sites-avaiable
 cp 000-default.conf projectname.conf
 
 //OR run this will copy the config from this repo
-curl https://raw.githubusercontent.com/beaverden/laravel-init/master/projectname.conf >>> projectname.conf
+curl https://raw.githubusercontent.com/beaverden/laravel-init/master/projectname.conf > projectname.conf
 
 
 //Disables the default site listening on port 80
@@ -45,9 +45,24 @@ sudo a2dissite 000-default
 //Enables our site (adds a link to projectname.conf into the /sites-enabled directory
 sudo a2ensite projectname.conf
 
+//Make sure mod rewrite is enabled
+sudo a2enmod rewrite
+
 //That's what apache suggests after enabling a site
 sudo service apache2 reload
 
 //That's a restart
 sudo service apache2 restart
+```
+
+###Copy .htaccess from repo
+```
+cd path/to/projectname
+curl https://raw.githubusercontent.com/beaverden/laravel-init/master/.htaccess > public/.htaccess
+//This will add gzip and browser caching
+```
+
+###Add .env file
+```
+curl https://raw.githubusercontent.com/laravel/laravel/master/.env.example > .env
 ```

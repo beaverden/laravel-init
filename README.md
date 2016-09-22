@@ -1,7 +1,7 @@
 # laravel-init
 Provides a set of commands and files I use in my laravel projects
 
-1. Make sure everything is up to date
+###Make sure everything is up to date
 ```
 composer update
 
@@ -11,7 +11,7 @@ npm install
 npm update
 ```
 
-2. Add permissions to the directories
+###Add permissions to the directories
 
 ```
 //Might also need to add permissions to upper directories (755)
@@ -19,7 +19,7 @@ sudo chmod -R 777 storage
 sudo chmod -R 777 bootstrap
 ```
 
-3. Setup apache2 server
+###Setup apache2 server
 
 ```
 //Make sure everything is up to date

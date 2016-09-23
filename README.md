@@ -52,7 +52,7 @@ sudo a2enmod deflate
 
 sudo a2enmod filter
 
-sudo a2enmod expipres
+sudo a2enmod expires
 
 //That's what apache suggests after enabling a site
 sudo service apache2 reload

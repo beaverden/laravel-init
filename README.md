@@ -48,6 +48,12 @@ sudo a2ensite projectname.conf
 //Make sure mod rewrite is enabled
 sudo a2enmod rewrite
 
+sudo a2enmod deflate
+
+sudo a2enmod filter
+
+sudo a2enmod expipres
+
 //That's what apache suggests after enabling a site
 sudo service apache2 reload
 
